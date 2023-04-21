@@ -16,34 +16,36 @@
     <main>
         <div class="row">
             <div class="col-xs-8">
-            <h2 class="text-primary text-center">CatPhotoApp</h2>
-        </div>
+                <h2 class="text-primary text-center">CatPhotoApp</h2>
+            </div>
             <div class="col-xs-4">
-            <img class="thick-green-border img-responsive" src="src/img/OrangeCat.jpg" alt="Orange cat."></a>
-        </div>
-        </h2>
+                <img class="thick-green-border img-responsive" src="src/img/OrangeCat.jpg" alt="Orange cat."></a>
+            </div>
+            </h2>
             <section>
                 <h2>Cat Photos</h2>
                 <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
                 <img src="src/img/tr.cats.jpg" alt="Three cat."></a>
             </section>
 
-        <div class="row">
+            <div class="row">
+                <i class="1-circle"></i>
                 <div class="col-xs-4"></div>
-            <div class="d-grid gap-2 col-xs-4">
-                <button class="btn btn-primary" type="button">Like</button>
+                <div class="d-grid gap-2 col-xs-4">
+                    <button class="btn btn-primary" type="button"><i class="fas fa-thumbs-up">Like</i></button>
+                </div>
+
             </div>
-        </div>
             <div class="col-xs-4">
-            <div class="d-grid gap-2 col-xs-4">
-                <button class="btn btn-info" type="button">Info</button>
+                <div class="d-grid gap-2 col-xs-4">
+                    <button class="btn btn-info" type="button"><i class="bi-alarm"></i>Info</button>
+                </div>
             </div>
-        </div>
             <div class="col-xs-4">
-            <div class="d-grid gap-2 col-xs-4">
-                <button class="btn btn-danger" type="button">Delete</button>
+                <div class="d-grid gap-2 col-xs-4">
+                    <button class="btn btn-danger" type="button">Delete</button>
+                </div>
             </div>
-        </div>
             <section>
                 <p>Things cats <span class="text-danger">love</span> love:</p>
                 <ul>
@@ -56,7 +58,7 @@
                     <img src="src/img/lasagna.jpg" alt="Lasagna plate.">
                     <figcaption>Cats <em>love</em> lasagna.</figcaption>
                 </figure>
-
+                <br>
                 <h3>Top 3 things cats hate:</h3>
                 <ol>
                     <li>flea treatment</li>
@@ -73,24 +75,43 @@
             <section>
                 <h2>Cat Form</h2>
                 <form action="https://freecatphotoapp.com/submit-cat-photo">
+
                     <fieldset>
                         <legend>Is your cat an indoor or outdoor cat?</legend>
-                        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
-                            Indoor</label>
+                        <div class="row">
+                            <div class="col-xs-6"></div>
+                            <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked>
+                                Indoor</label>
+                        </div>
+                        <div class="col-xs-6"></div>
                         <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
-                    </fieldset>
-                    <fieldset>
-                        <legend>What's your cat's personality?</legend>
-                        <input id="loving" type="checkbox" name="personality" value="loving" checked> <label
-                            for="loving">Loving</label>
-                        <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
-                        <input id="energetic" type="checkbox" name="personality" value="energetic"> <label
-                            for="energetic">Energetic</label>
-                            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
-                            <button type="submit">Submit</button>
-                    </fieldset>
-                </form>
-            </section>
+        </div>
+        </div>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <div class="row">
+                <div class="col-xs-4">
+                    <input id="loving" type="checkbox" name="personality" value="loving" checked> <label
+                        for="loving">Loving</label>
+                </div>
+
+                <div class="col-xs-4">
+                    <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+                </div>
+
+                <div class="col-xs-4"></div>
+                <input id="energetic" type="checkbox" name="personality" value="energetic"> <label
+                    for="energetic">Energetic</label>
+            </div>
+            </div>
+
+            <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+            <button type="submit">Submit</button>
+        </fieldset>
+        </form>
+        </section>
         </div>
     </main>
 </body>
@@ -102,4 +123,3 @@
 </footer>
 
 </html>
-
